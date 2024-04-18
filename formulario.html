@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+        <style>
+            h1{
+                font-size: 50px;
+            }
+            body{
+                color: darkred;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de pessoas</h1>
+        <form action="redebeDados.php" method="post">
+            <table border="1" width="50%" height="50%" cellspacing="5">
+            <tr>
+            <td>Email: <input type="email" name="email" size="50%"><br><br></td>
+            
+            <td>senha: <input type="password" name="senha" size="50%"><br><br></td>
+            </tr>
+
+            <td>Endereço: <input type="text" name="endereço" size="47%"><br><br></td>
+            <td>hora: <input type="time" name="hora" size=><br><br></td>
+            <td>cor: <input type="color" name="cor"><br><br></td>
+            <td>Nascimento: <input type="datetime-local" name="Nascimento" ><br><br></td>
+            </table>
+            Satisfação: <input type="range" name="Satisfação" ><br><br><br>
+            Escolha um arquivo: <input type="file" name="arquivo"><br><br><br>
+
+            <input width="300px" height="300px" type="image" src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/441720/Pc-Gamer-Overclock-Extreme-4090-Hof-Intel-I9-13900kf-128GB-Ddr5-4TB-M-2_1678719516_gg.jpg" alt=""><br><br>
+            
+            Cursos: <br>
+            <input type="radio" name="curso" value="TI">TI<br> 
+            <input type="radio" name="curso" value="MC">MC<br>
+            <input type="radio" name="curso" value="TL">TL<br><br><br>
+           
+            Disciplinas: <br>
+             <input type="checkbox" name="LV1" >LV1<br>
+             <input type="checkbox" name="redes" >Redes<br>
+             <input type="checkbox" name="MPE" >MPE<br>
+             <input type="checkbox" name="POO" >POO<br><br>
+
+             <input type="button" value="enviar"><br><br><br>
+
+             Estado: <br>
+             <select name="estado" >
+                <option value=""></option>
+                <option value="DF">DF</option>
+                <option value="MG">MG</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+             </select><br><br>
+
+             Observações:<br>
+             <textarea name="Observações" cols="30" rows="10"></textarea><br><br>
+             
+             Estilo de musicas: <br>
+             <input type="checkbox" name="Rock" >Rock<br>
+             <input type="checkbox" name="Rap" >Rap<br>
+             <input type="checkbox" name="Sertanejo" >Sertanejo<br>
+             <input type="checkbox" name="Funk" >Funk<br><br>
+             
+             <input type="submit" value="Cadastro">
+
+
+            <br>
+            <br>
+            <br>
+        </form>
+    </body>
+</html>
